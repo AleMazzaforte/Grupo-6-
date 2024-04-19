@@ -1,0 +1,42 @@
+@import url('paleta.css');
+
+
+footer {
+    background-color:var(--secundario);
+    color: var(--principal);
+    padding: 20px;
+
+    grid-area: footer;
+    padding: 10px;
+    font-size: 1.2em;
+    & b{font-family: 'Kumar One Outline', cursive; color: var(--resaltado);}
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}

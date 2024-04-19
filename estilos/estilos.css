@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Josefin+Sans|Kumar+One+Outline');
+@import url(paleta.css);
+@import url('header.css');
+@import url('footer.css');
+      
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "header1 header1 header2 header2"
+    "nav nav nav nav"
+    "main1 main1 main2 main2"
+    "main3 main3 main4 main4"
+    "footer footer footer footer";
+    gap: 10px;
+
+    
+
+    & main{
+      display: contents;
+      & .card{
+          border: 1px var(--secundario) solid;
+          border-radius: 20px;
+          font-size: 1.25em;
+          & .card-body{
+            padding: 20px;
+            & h3{
+                padding: 5px 0 3px 0;
+          color: var(--secundario);
+        }
+        & h4{
+          font-size: normal;
+          color: var(--importante);
+          padding: 5px 0 5px 0;
+        }
+          }
+      & a{display: none}
+      }
+      & #main1{grid-area: main1;}
+      & #main2{grid-area: main2;}
+      & #main3{grid-area: main3; & ul{margin: 10px}}
+      & #main4{grid-area: main4;
+        & ul{
+        list-style-type: none;
+        & li:nth-child(-n+2){border-bottom: 1px solid #aaa}
+      }
+      }
+    }
+
+    & footer{
+    grid-area: footer;
+    background-color: var(--principal);
+    padding: 10px;
+    color: var(--blanco);
+    font-size: 1.2em;
+    & b{font-family: 'Kumar One Outline', cursive; color: var(--resaltado);}
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+  body{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header1 header2"
+    "nav nav"
+    "main1 main2"
+    "main3 main4"
+    "footer footer";
+    & nav{flex-wrap: wrap;
+      & a{flex: 40%}
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 1px){
+  body{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header1""header2""nav""main1""main2""main3""main4""footer";
+    & main{& .card{& a{
+      display: block;
+      border: 1px solid var(--resaltado);
+      border-radius: 10px;
+      color: var(--resaltado);
+      text-align: center;
+    } } }
+
+  }
+  nav{flex-direction: column;}
+  .header1{width: 150px; margin: 0 auto;}
+  .header2{text-align: center;}
+  .card a:hover{background-color: var(--resaltado);color: var(--blanco);}
+}
