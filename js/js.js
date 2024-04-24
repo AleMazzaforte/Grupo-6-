@@ -25,24 +25,35 @@ let email;
 let telefono;
 let clienteGuardado = document.getElementById("clienteGuardado");
 
-
 function submit() {
-    // nombre = document.querySelector(".nombre").value;
-    // cuit = document.querySelector(".cuit").value;
-    // dni = document.querySelector(".dni").value;
-    // email = document.querySelector(".email").value;
-    // telefono = document.querySelector(".telefono").value;
+    nombre = document.querySelector(".nombre").value;
+    dni = document.querySelector("#dni").value;
+    email = document.querySelector("#email").value;
+    telefono = document.querySelector("#telefono").value;
 
-    console.log(nombre)
-    // if ((nombre.length >= 3 && cuit > 0 && email.length >= 3 && telefono.length >= 0) && (dni.length > 0 || cuit > 0)){
-    //     clienteGuardado.innerHTML = `Se guardó el cliente ${nombre} <br> Sus datos son: <br> ${cuit}<br>${dni}<br>${email}<br>${telefono}`
-    // }
-    let checkboxes = document.querySelectorAll('#checkbox input[type="checkbox"]');
-
-    checkboxes.forEach(checkbox => {
-        if (checkbox.checked) {
-            console.log(`Checkbox ${checkbox.parentNode.textContent.trim()} marcado.`);
+    function validarCuit() {
+        // Validación simple de longitud
+        if (dni.length == 13) {
+            return true;
         }
-    });
-    
+        alert("El CUIT ingresado no es válido");
+        return false;
+    }
+
+    if ((document.querySelector("#checkboxCuit").checked && validarCuit()) || document.querySelector("#checkboxDni").checked) {
+        if ((nombre.length >= 3 && email.length >= 3 && telefono.length >= 3) && (dni.length >= 3)) {
+            clienteGuardado.innerHTML = `Se guardó el cliente ${nombre} <br> Sus datos son: <br> ${cuit}<br>${dni}<br>${email}<br>${telefono}`;
+        } else if (nombre.length <= 3) {
+            clienteGuardado.innerHTML = `El nombre es inválido.`;
+        } else if (email.length <=3) {
+            clienteGuardado.innerHTML = `El email es inválido.`;
+        }else if (telefono.length <= 3) {
+            clienteGuardado.innerHTML = `El número de teléfono es inválido.`;
+        }else if (dni.length <= 3) {
+            clienteGuardado.innerHTML = `El D.N.I. es inválido.`;
+        }
+    }
 }
+
+
+
