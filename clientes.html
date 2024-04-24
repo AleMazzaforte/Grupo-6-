@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header id="header">
+        <div></div>
+        <h1 class="header1">Grupo 6</h1>
+       
+        <nav id="nav1">
+            <a href="" id="a1" class="link">Quienes somos</a>
+            <a href="" id="a2" class="link">Porductos</a>
+            <a href="" id="a3" class="link">Contacto</a>
+            <a href="" id="a4" class="link">Trabaja con nosotros</a>
+        </nav>
+    </header>
+    <main>
+        
+    
+
+        <h1>Formulario de Registro</h1><br><br>
+
+        <select name="selectCliente" id="selectCliente">
+            <option value="Persona">Persona</option>
+            <option value="Empresa">Empresa</option>
+        </select><br><br>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" class="nombre"><br><br>
+
+        <ul id="checkbox">
+            <li><input type="checkbox">C.U.I.T.</li>
+            <li><input type="checkbox">D.N.I.</li>
+        </ul><br>
+
+        <label for="dni">D.N.I. / C.U.I.T.</label><br>
+        <input type="number" id="dni" name="dni" class="dni"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" class="email"><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" class="telefono"><br><br>
+
+        <label for="telefono">Dirección:</label><br>
+        <input type="tel" id="direccion" name="direccion" class="direccion"><br><br>
+
+        <input type="submit" value="Registrarse" id="submitDni" onclick="submit()">
+    
+    
+    <!-- <form">
+        
+        <h1>Formulario de Registro Empresas</h1>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" class="nombre"><br><br>
+
+        <label for="cuit">C.U.I.T.</label><br>
+        <input type="number" id="cuit" name="cuit" class="cuit"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" class="email"><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" class="telefono"><br><br>
+
+        <input type="submit" value="Registrarse" id="submitCuit">
+    </form> -->
+    </main>
+    <div id="clienteGuardado"></div>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
