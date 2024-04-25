@@ -21,7 +21,29 @@
             <a href="" id="a4" class="link">Trabaja con nosotros</a>
         </nav>
     </header>
-
+    <main>
+        <p>
+            ¡Bienvenido/a a <b>Grupo 6</b>! Estamos encantados de que hayas decidido unirte a nuestro equipo. Para comenzar, necesitamos que completes algunos datos para formalizar tu ingreso. Por favor, sigue las instrucciones a continuación para cargar tus datos. ¡Gracias por confiar en nosotros!
+        </p>
+    <form action="procesar_datos.php" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+        
+        <label for="direccion">Dirección:</label><br>
+        <textarea id="direccion" name="direccion" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+        </form>
+    </main>
 
     <script src="js/js.js"></script>
 </body>

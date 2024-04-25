@@ -23,6 +23,7 @@ let cuit;
 let dni;
 let email;
 let telefono;
+let direccion;
 let clienteGuardado = document.getElementById("clienteGuardado");
 
 function submit() {
@@ -30,7 +31,7 @@ function submit() {
     dni = document.querySelector("#dni").value;
     email = document.querySelector("#email").value;
     telefono = document.querySelector("#telefono").value;
-
+    direccion = document.querySelector("#direccion").value;
     function validarCuit() {
         // Validación simple de longitud
         if (dni.length == 13) {
@@ -39,9 +40,11 @@ function submit() {
         alert("El CUIT ingresado no es válido");
         return false;
     }
+    console.log(direccion)
 
     if ((document.querySelector("#checkboxCuit").checked && validarCuit()) || document.querySelector("#checkboxDni").checked) {
-        if ((nombre.length >= 3 && email.length >= 3 && telefono.length >= 3) && (dni.length >= 3)) {
+
+        if (nombre.length >= 3 && email.length >= 3 && telefono.length >= 3 && dni.length >= 3 && direccion.length >= 3) {
             clienteGuardado.innerHTML = `Se guardó el cliente ${nombre} <br> Sus datos son: <br> ${cuit}<br>${dni}<br>${email}<br>${telefono}`;
         } else if (nombre.length <= 3) {
             clienteGuardado.innerHTML = `El nombre es inválido.`;
@@ -51,6 +54,8 @@ function submit() {
             clienteGuardado.innerHTML = `El número de teléfono es inválido.`;
         }else if (dni.length <= 3) {
             clienteGuardado.innerHTML = `El D.N.I. es inválido.`;
+        }else if (direccion.length <= 3) {
+            clienteGuardado.innerHTML = `La dirección es inválida.`;
         }
     }
 }
