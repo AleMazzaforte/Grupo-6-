@@ -18,33 +18,37 @@
             <a href="" id="a1" class="link">Quienes somos</a>
             <a href="" id="a2" class="link">Porductos</a>
             <a href="" id="a3" class="link">Contacto</a>
-            <a href="" id="a4" class="link">Trabaja con nosotros</a>
+            <a href="trabajaConNosotros.html" id="a4" class="link">Trabaja con nosotros</a>
         </nav>
     </header>
-    <main>
+    <main id="a4">
         <p>
             ¡Bienvenido/a a <b>Grupo 6</b>! Estamos encantados de que hayas decidido unirte a nuestro equipo. Para comenzar, necesitamos que completes algunos datos para formalizar tu ingreso. Por favor, sigue las instrucciones a continuación para cargar tus datos. ¡Gracias por confiar en nosotros!
         </p>
-    <form action="procesar_datos.php" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" id="apellido" name="apellido" required><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="telefono">Teléfono:</label><br>
-        <input type="tel" id="telefono" name="telefono" required><br><br>
-        
-        <label for="direccion">Dirección:</label><br>
-        <textarea id="direccion" name="direccion" rows="4" cols="50" required></textarea><br><br>
-        
-        <input type="submit" value="Enviar">
-        </form>
-    </main>
+    <!-- <form> -->
+        <label for="nombreSocio">Nombre:</label><br>
+        <input type="text" id="nombreSocio" name="nombreSocio" ><br><br>
 
+        <label for="dniSocio">D.N.I.</label><br>
+        <input type="number" id="dniSocio" name="dniSocio" class="dniSocio"><br><br>
+        
+        <label for="emailSocio">Email:</label><br>
+        <input type="email" id="emailSocio" name="emailSocio" ><br><br>
+        
+        <label for="telefonoSocio">Teléfono:</label><br>
+        <input type="tel" id="telefonoSocio" name="telefonoSocio"><br><br>
+
+        <label for="cv">CV:</label><br>
+        <input type="file" id="cv" name="cv"><br><br>
+        
+        <label for="direccionSocio">Dirección:</label><br>
+        <textarea id="direccionSocio" name="direccionSocio" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="button" value="Enviar" onclick="enviarFormSocio()">
+    <!-- </form> -->
+    </main>
+    <div id="socioGuardado"></div>
     <script src="js/js.js"></script>
+    <script src="js/trabajaConNosotros.js"></script>
 </body>
 </html>

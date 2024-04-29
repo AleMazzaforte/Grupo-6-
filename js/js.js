@@ -32,6 +32,7 @@ function submit() {
     email = document.querySelector("#email").value;
     telefono = document.querySelector("#telefono").value;
     direccion = document.querySelector("#direccion").value;
+    
     function validarCuit() {
         // Validación simple de longitud
         if (dni.length == 13) {
@@ -40,7 +41,6 @@ function submit() {
         alert("El CUIT ingresado no es válido");
         return false;
     }
-    console.log(direccion)
 
     if ((document.querySelector("#checkboxCuit").checked && validarCuit()) || document.querySelector("#checkboxDni").checked) {
 
