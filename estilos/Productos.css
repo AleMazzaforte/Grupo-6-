@@ -1,0 +1,29 @@
+
+
+
+/* .contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  3 columnas iguales 
+    grid-template-areas: 
+    "section1 section2 section3"
+    "section4 section5 section6"
+    "section7 section8 section9"
+    
+    gap: 10px;
+} */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 15px;
+
+}
+
+.card {
+    background-color: var(--claro);
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+}

@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee|Josefin+Sans|Kumar+One+Outline');
       
 :root{
-    --principal: #349B70;
-    --secundario: #00F08C;
-    --resaltado: #F06B00;
-    --importante: #F02500;
-    --blanco: #F5F5F5;
+  --principal: #c622f9;
+  --secundario: #d440fb;
+  --resaltado: #8e28a0;
+  --noImportante: #f17bfe;
+  --claro: #ff99ff;
 }
 
 *{
