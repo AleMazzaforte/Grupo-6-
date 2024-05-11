@@ -1,16 +1,8 @@
+h2{
+    margin-top: 15px;
+    text-align: center;
+}
 
-
-
-/* .contenedor-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  3 columnas iguales 
-    grid-template-areas: 
-    "section1 section2 section3"
-    "section4 section5 section6"
-    "section7 section8 section9"
-    
-    gap: 10px;
-} */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -27,3 +19,10 @@ main {
     border-radius: 10px;
     margin: 15px;
 }
+
+.card img{
+    margin: 0 auto;
+    margin-left: -7px;
+}
+
+

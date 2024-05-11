@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabaja con nosotros</title>
+    <link rel="stylesheet" href="estilos/trabajaConNosotros.css">
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +17,8 @@
        
         <nav id="nav1">
             <a href="index.html" id="a1" class="link">Quienes somos</a>
-            <a href="productos.html" id="a2" class="link">Porductos</a>
-            <a href="clientes.html" id="a3" class="link">Contacto</a>
+            <a href="productos.html" id="a2" class="link">Productos</a>
+            <a href="clientes.html" id="a3" class="link">Regístrese</a>
             <a href="trabajaConNosotros.html" id="a4" class="link">Trabaja con nosotros</a>
         </nav>
     </header>
@@ -25,7 +26,7 @@
         <p>
             ¡Bienvenido/a a <b>Grupo 6</b>! Estamos encantados de que hayas decidido unirte a nuestro equipo. Para comenzar, necesitamos que completes algunos datos para formalizar tu ingreso. Por favor, sigue las instrucciones a continuación para cargar tus datos. ¡Gracias por confiar en nosotros!
         </p>
-    <!-- <form> -->
+    <form>
         <label for="nombreSocio">Nombre:</label><br>
         <input type="text" id="nombreSocio" name="nombreSocio" ><br><br>
 
@@ -44,10 +45,20 @@
         <label for="direccionSocio">Dirección:</label><br>
         <textarea id="direccionSocio" name="direccionSocio" rows="4" cols="50"></textarea><br><br>
         
-        <input type="button" value="Enviar" onclick="enviarFormSocio()">
-    <!-- </form> -->
-    </main>
+    </form> 
+
+    <input type="button" value="Enviar" onclick="enviarFormSocio()" class="buttonEnviar">
+
+    </main> 
+
     <div id="socioGuardado"></div>
+
+    <footer>
+        <p>Codo a codo Grupo 6</p>
+        <a href="#header">Ir arriba</a>
+     </footer>
+ 
+    
     <script src="js/js.js"></script>
     <script src="js/trabajaConNosotros.js"></script>
 </body>

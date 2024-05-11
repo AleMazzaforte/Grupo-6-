@@ -18,15 +18,7 @@
  body{
      width: 90vw; 
     margin: auto;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "header1 a1 a2 a3 a4"
-    
-    "main1 main1 main2 main2"
-    "main3 main3 main4 main4"
-    "footer footer footer footer";
-    gap: 10px; */
+  
     
 }
 body header {
@@ -43,5 +35,32 @@ body header {
   
 }
 p{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Signika Negative";
+}
+
+.buttonEnviar {
+  width: 80px;
+  height: 20px;
+  transition: 0.5s;
+  background-color: var(--secundario);
+  color: whitesmoke;
+}
+
+.buttonEnviar:hover {
+  width: 105px;
+  background-color: aqua;
+  /*border-radius: 15px;
+   width: 90px;
+  height: 23px; */
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--noImportante);
+  margin-top: 25px;
+
 }

@@ -32,6 +32,7 @@ function submit() {
     email = document.querySelector("#email").value;
     telefono = document.querySelector("#telefono").value;
     direccion = document.querySelector("#direccion").value;
+    cuit = document.querySelector("#dni").value;
     
     function validarCuit() {
         // Validación simple de longitud
@@ -43,9 +44,14 @@ function submit() {
     }
 
     if ((document.querySelector("#checkboxCuit").checked && validarCuit()) || document.querySelector("#checkboxDni").checked) {
+        if (document.querySelector("#checkboxCuit").checked){
+            dni = "No se requiere";
+        }else if (document.querySelector("#checkboxDni").checked){
+            cuit = "No se requiere";
+        }
 
         if (nombre.length >= 3 && email.length >= 3 && telefono.length >= 3 && dni.length >= 3 && direccion.length >= 3) {
-            clienteGuardado.innerHTML = `Se guardó el cliente ${nombre} <br> Sus datos son: <br> ${cuit}<br>${dni}<br>${email}<br>${telefono}`;
+            clienteGuardado.innerHTML = `Se guardó el cliente ${nombre} <br> Sus datos son: <br>CUIT:  ${cuit}<br>DNI: ${dni}<br>Email; ${email}<br>Teléfono:${telefono}`;
         } else if (nombre.length <= 3) {
             clienteGuardado.innerHTML = `El nombre es inválido.`;
         } else if (email.length <=3) {
