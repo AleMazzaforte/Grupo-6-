@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja con nosotros</title>
+    <link rel="stylesheet" href="estilos/trabajaConNosotros.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div></div>
+        <h1 class="header1">Grupo 6</h1>
+       
+        <nav id="nav1">
+            <a href="index.html" id="a1" class="link">Quienes somos</a>
+            <a href="productos.html" id="a2" class="link">Productos</a>
+            <a href="clientes.html" id="a3" class="link">Regístrese</a>
+            <a href="trabajaConNosotros.html" id="a4" class="link">Trabaja con nosotros</a>
+        </nav>
+    </header>
+    <main id="a4">
+        <p>
+            ¡Bienvenido/a a <b>Grupo 6</b>! Estamos encantados de que hayas decidido unirte a nuestro equipo. Para comenzar, necesitamos que completes algunos datos para formalizar tu ingreso. Por favor, sigue las instrucciones a continuación para cargar tus datos. ¡Gracias por confiar en nosotros!
+        </p>
+    <form>
+        <label for="nombreSocio">Nombre:</label><br>
+        <input type="text" id="nombreSocio" name="nombreSocio" ><br><br>
+
+        <label for="dniSocio">D.N.I.</label><br>
+        <input type="number" id="dniSocio" name="dniSocio" class="dniSocio"><br><br>
+        
+        <label for="emailSocio">Email:</label><br>
+        <input type="email" id="emailSocio" name="emailSocio" ><br><br>
+        
+        <label for="telefonoSocio">Teléfono:</label><br>
+        <input type="tel" id="telefonoSocio" name="telefonoSocio"><br><br>
+
+        <label for="cv">CV:</label><br>
+        <input type="file" id="cv" name="cv"><br><br>
+        
+        <label for="direccionSocio">Dirección:</label><br>
+        <textarea id="direccionSocio" name="direccionSocio" rows="4" cols="50"></textarea><br><br>
+        
+    </form> 
+
+    <input type="button" value="Enviar" onclick="enviarFormSocio()" class="buttonEnviar">
+
+    </main> 
+
+    <div id="socioGuardado"></div>
+
+    <footer>
+        <p>Codo a codo Grupo 6</p>
+        <a href="#header">Ir arriba</a>
+     </footer>
+ 
+    
+    <script src="js/js.js"></script>
+    <script src="js/trabajaConNosotros.js"></script>
+</body>
+</html>

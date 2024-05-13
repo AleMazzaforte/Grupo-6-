@@ -1,0 +1,28 @@
+h2{
+    margin-top: 15px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 15px;
+
+}
+
+.card {
+    background-color: var(--claro);
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.card img{
+    margin: 0 auto;
+    margin-left: -7px;
+}
+
+
