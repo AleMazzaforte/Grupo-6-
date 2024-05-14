@@ -5,8 +5,9 @@ header {
     background-color:var(--secundario);
     color: var(--principal);
     padding: 10px 20px;
-    display: block;
+    display: flex;
     width: max-content;
+    height: max-content;
 }
 
 .logo {
@@ -14,21 +15,35 @@ header {
 }
 
 nav { 
-    display: none;
-    overflow-y: scroll;
-    align-items: center;
 
     display: flex;
+    overflow-y:hidden;
     background-color: var(--principal);
-    justify-content: space-evenly;
-    & a{
+
+    & ul{
+        
+        & a{
+
         height: max-content;
         width: max-content;
-        flex: 100%;
         text-align: center;
         color: var(--blanco);
-        padding: 15px;
+        padding: 5px;
+
+        }
     }
+
+    #menuIcon{
+        background-color: var(--blanco);
+    }
+    
+    
+}
+
+.hidden {
+
+    display: none;
+
 }
 
 
