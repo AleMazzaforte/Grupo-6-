@@ -58,14 +58,6 @@ body{
       }
     }
 
-    & footer{
-    grid-area: footer;
-    background-color: var(--principal);
-    padding: 10px;
-    color: var(--blanco);
-    font-size: 1.2em;
-    & b{font-family: 'Kumar One Outline', cursive; color: var(--resaltado);}
-  }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px){

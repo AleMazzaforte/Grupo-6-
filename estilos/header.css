@@ -5,39 +5,32 @@ header {
     background-color:var(--secundario);
     color: var(--principal);
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    display: contents; /* Hace que los hijos se desplieguen como hijos del padre de header (el body)*/
-    & .header1{grid-area: header1; place-self: end}
-    & .header2{
-      grid-area: header2;
-        & h1{font-family: 'Bungee', cursive; color: var(--resaltado);}
-        & p{font-family: 'Josefin Sans', sans-serif;}
-      }
-
+    display: block;
+    width: max-content;
 }
 
 .logo {
     font-size: 24px;
 }
 
-nav {
-    display: flex;
+nav { 
+    display: none;
+    overflow-y: scroll;
     align-items: center;
 
-    grid-area: nav;
     display: flex;
     background-color: var(--principal);
     justify-content: space-evenly;
     & a{
-        flex: 25%;
+        height: max-content;
+        width: max-content;
+        flex: 100%;
         text-align: center;
         color: var(--blanco);
         padding: 15px;
     }
 }
+
 
 nav .nav-links {
     display: none;
