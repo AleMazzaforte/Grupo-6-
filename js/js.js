@@ -71,11 +71,21 @@ function submit() {
 // NAVBAR
 
 document.addEventListener("DOMContentLoaded", function() {
-    const menuBtn = document.getElementById("menuBtn");
+    const menuBtnShow = document.getElementById("menuBtnShow");
     const menu = document.getElementById("menu");
+    const menuBtnHide = document.getElementById("menuBtnHide");
   
-    menuBtn.addEventListener("click", function() {
-      menu.classList.toggle("hidden");
+    menuBtnShow.addEventListener("click", function() {
+        menu.classList.remove("hidden");
+        menuBtnShow.classList.add("hidden");
+        menuBtnHide.classList.remove("hidden");
     });
+
+    menuBtnHide.addEventListener("click", function() {
+        menu.classList.add("hidden");
+        menuBtnHide.classList.add("hidden");
+        menuBtnShow.classList.remove("hidden");
+    });
+
   });
 

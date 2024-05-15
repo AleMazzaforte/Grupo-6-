@@ -46,6 +46,12 @@ nav {
 
 }
 
+.visible {
+
+    display: flex;
+    
+}
+
 
 nav .nav-links {
     display: none;
