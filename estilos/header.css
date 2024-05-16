@@ -1,6 +1,8 @@
 @import url('paleta.css');
 
 
+
+
 header {
     background-color:var(--secundario);
     color: var(--principal);
@@ -8,43 +10,78 @@ header {
     display: flex;
     width: max-content;
     height: max-content;
+    flex-direction: column;
+    position: sticky;
+
+    & nav { 
+
+        height: auto;
+    
+        display: flex;
+        justify-content: center;
+        overflow-y:visible;
+        background-color: var(--principal);
+        flex-direction: column;
+    
+        & i{
+    
+            font-size: 1rem;
+        }
+    
+        & ul{
+            
+            
+            display: flex; /* Establece el contenedor como un contenedor de flexbox */
+            
+            justify-content: space-between; /* Distribuye los elementos equitativamente a lo largo del contenedor */
+    
+            flex-direction: column;
+    
+            
+    
+    
+            & li {
+
+                padding: 10dp;
+    
+                display: flex;
+
+                align-self: flex-end;
+    
+                height: max-content;
+    
+                padding: 0dp;
+                
+            }
+    
+            
+            & a{
+    
+            height: max-content;
+            width: max-content;
+            color: var(--blanco);
+            padding: 5px;
+    
+            }
+        }
+    
+        & #menuIcon{
+            background-color: var(--blanco);
+        }
+        
+        & button {
+            width: 100dp;
+            height: 100dp;
+        }
+        
+    }
 }
 
 .logo {
     font-size: 24px;
 }
 
-nav { 
 
-    display: flex;
-    overflow-y:hidden;
-    background-color: var(--principal);
-
-    & i{
-
-        font-size: 1rem;
-    }
-
-    & ul{
-
-        display: flex;
-        
-        & a{
-
-        height: max-content;
-        width: max-content;
-        color: var(--blanco);
-        padding: 5px;
-
-        }
-    }
-
-    #menuIcon{
-        background-color: var(--blanco);
-    }
-    
-    
-}
 
 .hidden {
 
