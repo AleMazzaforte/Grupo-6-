@@ -20,13 +20,19 @@ nav {
     overflow-y:hidden;
     background-color: var(--principal);
 
+    & i{
+
+        font-size: 1rem;
+    }
+
     & ul{
+
+        display: flex;
         
         & a{
 
         height: max-content;
         width: max-content;
-        text-align: center;
         color: var(--blanco);
         padding: 5px;
 
@@ -49,7 +55,7 @@ nav {
 .visible {
 
     display: flex;
-    
+
 }
 
 
