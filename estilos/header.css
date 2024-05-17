@@ -4,8 +4,8 @@
 
 
 header {
-    background-color:var(--secundario);
-    color: var(--principal);
+    /*background-color:var(--secundario);
+     color: var(--principal); */
     padding: 10px 20px;
     display: flex;
     width: max-content;
