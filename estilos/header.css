@@ -8,20 +8,26 @@ header {
     color: var(--principal);
     padding: 10px 20px;
     display: flex;
-    width: max-content;
+    width: 100%;
     height: max-content;
-    flex-direction: column;
+    flex-direction: row;
     position: sticky;
+
+    & h1{
+        align-items: baseline;
+    }
+    
 
     & nav { 
 
-        height: auto;
     
         display: flex;
         justify-content: center;
         overflow-y:visible;
         background-color: var(--principal);
         flex-direction: column;
+
+        width: fit-content;
     
         & i{
     
@@ -30,25 +36,28 @@ header {
     
         & ul{
             
+            width: fit-content;
+
+            margin-left: auto;
             
             display: flex; /* Establece el contenedor como un contenedor de flexbox */
             
             justify-content: space-between; /* Distribuye los elementos equitativamente a lo largo del contenedor */
     
             flex-direction: column;
+
+            background-color: var(--principal);
+
+            margin-top: 100%;
     
             
     
     
             & li {
 
-                padding: 10dp;
-    
-                display: flex;
 
-                align-self: flex-end;
     
-                height: max-content;
+                display: block;
     
                 padding: 0dp;
                 
