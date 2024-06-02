@@ -31,8 +31,11 @@
   margin: 3px;
   
 }
-p{
+.p{
   font-family: "Signika Negative";
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 
 .buttonEnviar {
