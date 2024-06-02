@@ -21,6 +21,7 @@ header {
     flex-direction: row;
     position: sticky;
 
+
     & h1{
         align-items: baseline;
     }
@@ -28,12 +29,19 @@ header {
 
     & nav { 
 
+        
     
         display: flex;
         justify-content: center;
-        overflow-y:visible;
         background-color: var(--principal);
         flex-direction: column;
+
+        align-content: end;
+        flex-grow: 1 2 120;
+        
+
+        height: 50px;
+    
 
         width: min-content;
     
@@ -44,29 +52,32 @@ header {
     
         & ul{
             
+
+            margin-top: 200px;
+            
             width: fit-content;
 
             margin-left: auto;
+            height: max-content;
+            
+            padding: 10px;
             
             display: flex; /* Establece el contenedor como un contenedor de flexbox */
-            
-            justify-content: space-between; /* Distribuye los elementos equitativamente a lo largo del contenedor */
+             /* Distribuye los elementos equitativamente a lo largo del contenedor */
     
             flex-direction: column;
 
+            flex-wrap: nowrap;
+
             background-color: var(--principal);
+
     
             
     
     
             & li {
-
-
     
-                display: block;
-    
-                padding: 10dp;
-                
+                margin: 10px;
             }
     
             
