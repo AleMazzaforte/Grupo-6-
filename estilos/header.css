@@ -9,8 +9,10 @@ body header {
 
 header {
     background-color:var(--secundario);
+    position: sticky;
+    top: 0;
+
     
-    justify-content: space-evenly;
     
     text-align: left;
      color: var(--principal); 
@@ -19,7 +21,10 @@ header {
     width: 100%;
     height: 50%;
     flex-direction: row;
-    position: sticky;
+
+    
+    
+    justify-content: space-evenly;
 
 
     & h1{
@@ -36,8 +41,6 @@ header {
         background-color: var(--principal);
         flex-direction: column;
 
-        align-content: end;
-        flex-grow: 1 2 120;
         
 
         height: 50px;
@@ -53,7 +56,9 @@ header {
         & ul{
             
 
-            margin-top: 200px;
+            margin-top: 400px;
+
+            content: b;
             
             width: fit-content;
 
@@ -61,6 +66,8 @@ header {
             height: max-content;
             
             padding: 10px;
+
+            gap: 10px;
             
             display: flex; /* Establece el contenedor como un contenedor de flexbox */
              /* Distribuye los elementos equitativamente a lo largo del contenedor */
@@ -69,15 +76,26 @@ header {
 
             flex-wrap: nowrap;
 
-            background-color: var(--principal);
+            background: var(--principal);
 
+            
+                
+            box-sizing: border-box;
+
+            
     
             
     
     
             & li {
+
     
                 margin: 10px;
+
+                padding: 5px;
+
+                
+            background: var(--secundario);
             }
     
             
